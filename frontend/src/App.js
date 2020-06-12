@@ -1,33 +1,29 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { Header } from './components/Header'
-import { Sidebar } from './components/Sidebar'
-import { Content } from './components/Content'
-import { Default } from './layouts/Default'
+import { Router } from '@reach/router'
+import { GlobalStyle } from './styles/GlobalStyles'
+
+import { Home } from './pages/Home'
+import { Bookmarks } from './pages/Bookmarks'
+import { Comments } from './pages/Comments'
+import { Explore } from './pages/Explore'
+import { Profile } from './pages/Profile'
+import { Notifications } from './pages/Notifications'
+import { NotFound } from './pages/NotFound'
 
 function App() {
   return (
-    <Default className="App">
-      <Header></Header>
-      <main>
-        <Content>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </Content>
-        <Sidebar />
-      </main>
-    </Default>
+    <>
+      <GlobalStyle />
+      <Router>
+        <NotFound default />
+        <Home path='/' />
+        <Bookmarks path='/bookmarks' />
+        <Explore path='/explore' />
+        <Comments path='/comments' />
+        <Profile path='/profile' />
+        <Notifications path='/notifications' />
+      </Router>
+    </>
   );
 }
 
