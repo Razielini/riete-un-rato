@@ -7,7 +7,6 @@ export const Title = styled.div`
   justify-content: space-between;
   box-sizing: border-box;
   border-bottom: 1px solid rgb(56, 68, 77);
-  position: sticky;
   span {
     font-size: 25px;
     font-weight: 500;
