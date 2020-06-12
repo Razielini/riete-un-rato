@@ -13,9 +13,9 @@ export const ContentArticleBox = ({ avatar = IMG_DEFAULT}) => {
           The horrifying killings of George Floyd, Ahmaud Arbery, Breonna Taylor and far too many other Black people—and the protests they sparked—are shining a light on the brutal injustices that Black people experience every day…
         </BoxInfo>
         <BoxTool>
-          <ToolOption icon="dialog" />
-          <ToolOption icon="retweet" />
-          <ToolOption icon="heart" />
+          <ToolOption icon='dialog' hoverColor='#1B6FA6' />
+          <ToolOption icon='retweet' hoverColor='#178A52' />
+          <ToolOption icon='heart' hoverColor='rgba(224, 36, 94)' />
         </BoxTool>
       </BoxInput>
     </PostBox>
