@@ -1,8 +1,8 @@
 import React from 'react'
-import { Li } from './styles'
+import { Li, Link } from './styles'
 import { Cat, Bell, Bookmark, User, Home } from '../Icons'
 
-export const MenuOption = ({ title, icon = 'bell' }) => {
+export const MenuOption = ({ title, icon = 'bell', to }) => {
   const iconType = (icon) => {
     if (icon === 'home') return <Home />
     if (icon === 'cat') return <Cat />
@@ -13,10 +13,12 @@ export const MenuOption = ({ title, icon = 'bell' }) => {
 
   return (
     <Li>
-      {
-        iconType(icon)
-      }
-      <span>{title}</span>
+      <Link to={to}>
+        {
+          iconType(icon)
+        }
+        <span>{title}</span>
+      </Link>
     </Li>
   )
 }
