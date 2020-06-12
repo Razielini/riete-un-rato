@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PostBox = styled.div`
-  min-height: 150px;
+  min-height: 100px;
   border-bottom: 10px solid rgb(37, 51, 65);
   padding: 10px;
   display: flex;
@@ -20,6 +20,9 @@ export const Textarea = styled.textarea`
   height: 100px;
   background-color: transparent;
   border: none;
+  color: #9197a3;
+  font-size: 21px;
+  font-weight: 300;
 `
 
 export const BoxInput = styled.div`
@@ -31,6 +34,5 @@ export const BoxInput = styled.div`
 export const BoxTool = styled.div`
   width: 100%;
   padding: 10px;
-  position: absolute;
   bottom: 0;
 `
