@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const Li = styled.li`
-  font-size: 25px;
+export const Div = styled.div`
+  font-size: 16px;
   cursor: pointer;
-  padding: 10px 20px;
   width: fit-content;
   margin: 5px 0;
+  display: flex;
+  align-items: center;
   &:hover {
-    background-color: #794BC4;
-    border-radius: 30px;
+    color: ${props => props.hoverColor}
   }
 `
