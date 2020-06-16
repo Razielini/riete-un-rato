@@ -35,4 +35,15 @@ export const BoxTool = styled.div`
   width: 100%;
   padding: 10px;
   bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+`
+
+export const SendButton = styled.button`
+  background-color: rgb(121, 75, 196);
+  padding: 10px 20px;
+  font-size: large;
+  color: #FFF;
+  border: 0px solid transparent;
+  border-radius: 30px;
 `
