@@ -5,6 +5,11 @@ import { MenuOption } from '../../components/MenuOption'
 export const Header = () => {
   const options = [
     {
+      title: '',
+      icon: 'logo',
+      to: '#'
+    },
+    {
       title: 'Inicio',
       icon: 'home',
       to: '/'
@@ -31,7 +36,7 @@ export const Header = () => {
     },
     {
       title: 'Publicar',
-      icon: 'user',
+      icon: 'oldpen',
       to: '/'
     },
   ]
@@ -39,9 +44,8 @@ export const Header = () => {
     <HeaderContainer>
       <Nav>
         <Ul>
-          <li>Logo</li>
           {
-            options.map(({ title, icon, to }) => <MenuOption title={ title } icon={ icon } to={to} />)
+            options.map(({ title, icon, to }) => <MenuOption title={ title } icon={ icon } to={to} hoverColor='#794BC4' fillColor='#FFF' />)
           }
         </Ul>
       </Nav>
