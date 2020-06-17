@@ -9,6 +9,14 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #15202B;
   }
 
+  .mt-5-p {
+    margin-top: 5%;
+  }
+
+  .ml-15px {
+    margin-left: 15px;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
