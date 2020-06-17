@@ -8,7 +8,3 @@ export const Section = styled.section`
   display: grid;
   grid-area: Content;
 `
-
-export const PostSection = styled.div`
-  margin-top: 5%;
-`
